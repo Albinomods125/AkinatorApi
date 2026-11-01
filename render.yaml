@@ -1,0 +1,9 @@
+
+services:
+  - type: web
+    name: albino-akinator-api
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
